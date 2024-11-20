@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/navbar.js"></script>
+  <style>
+/* Algemene instellingen */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: 0.8s;
+}
+
+body {
+  padding-top: 40px;
+  color: #e0e0e0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Contact formulier */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Old Standard TT', serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fade-in animatie */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #1c2b64;
+  font-size: 36px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInText 1s 0.3s forwards;
+}
+
+p {
+   text-align: center;
+  color: #bdbdbd;
+  font-size: 25px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInText 1s 0.3s forwards;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.styled-input {
+  margin-bottom: 30px; /* Vergroot de marge tussen de velden */
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  animation: fadeInField 1s 0.6s forwards;
+}
+
+@keyframes fadeInField {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.styled-input input,
+.styled-input textarea {
+  width: 100%;
+  padding: 18px; /* Vergroot de padding voor meer ruimte */
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-input input:focus,
+.styled-input textarea:focus {
+  outline: none;
+  border-color: #1c2b64;
+  resize: vertical;
+  transform: scale(1.02);
+}
+
+.styled-input label {
+  position: absolute;
+  top: 20px; /* Verhoog de afstand van de top */
+  left: 25px; /* Vergroot de afstand aan de linkerzijde */
+  color: #bbb; /* Lichtgrijze kleur voor labels */
+  font-size: 16px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-weight: 500; /* Betere zichtbaarheid */
+  z-index: 1;
+}
+
+.styled-input input:focus ~ label,
+.styled-input textarea:focus ~ label {
+  top: -12px;
+  font-size: 14px; /* Maak de tekst wat kleiner bij focus */
+  color: #ffffff; /* Kleur verandert naar blauw wanneer gefocust */
+  transform: translateY(-10px);
+  font-weight: 700; /* Zwaardere lettertype bij focus */
+  letter-spacing: 1px; /* Voeg een beetje letterruimte toe voor een strakkere look */
+}
+
+/* Submit knop */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #1c2b64;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3d4b9e;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsieve instellingen */
+@media(max-width: 768px) {
+  .contact-form {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+  <!-- Contact formulier -->
+  <div class="contact-form">
+    <h1>Contactformulier</h1>
+    <p>Neem gerust contact op!</p>
+
+    <form action="{% url 'contact' %}" method="post">
+      <div class="styled-input">
+        <input type="text" name="name" required />
+        <label>Volledige Naam</label>
+      </div>
+      <div class="styled-input">
+        <input type="email" name="email" required />
+        <label>E-mail</label>
+      </div>
+      <div class="styled-input">
+        <input type="text" name="school" required />
+        <label>School</label>
+      </div>
+      <div class="styled-input">
+        <input type="text" name="subject" required />
+        <label>Onderwerp</label>
+      </div>
+      <div class="styled-input">
+        <textarea name="message" required></textarea>
+        <label>Bericht</label>
+      </div>
+      <button class="submit-btn" type="submit">Verzenden</button>
+    </form>
+  </div>
+
+</body>
+</html>

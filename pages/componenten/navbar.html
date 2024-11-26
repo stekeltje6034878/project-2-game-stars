@@ -182,27 +182,22 @@
 
     <!-- Sidebar -->
     <ul class="sidebar">
-      <!-- Knop voor het sluiten van de sidebar -->
       <li class="hide-button" onclick="hideSidebar()">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
           <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
         </svg></a>
       </li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">NEWS</a></li>
-      <li><a href="#">VIDEO</a></li>
-      <li><a href="#">MUSIC</a></li>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">GAMES</a></li>
+      <li><a href="#">CONTACT</a></li>
       <li><a href="#">SHOP</a></li>
     </ul>
 
-    <!-- Menu button buiten de sidebar -->
     <ul class="bar">
-      <li class="hideOnMobile"><a href="#">ABOUT</a></li>
-      <li class="hideOnMobile"><a href="#">NEWS</a></li>
-      <li class="hideOnMobile"><a href="#">VIDEO</a></li>
-      <li class="hideOnMobile"><a href="#">MUSIC</a></li>
+      <li class="hideOnMobile"><a href="#">HOME</a></li>
+      <li class="hideOnMobile"><a href="#">GAMES</a></li>
+      <li class="hideOnMobile"><a href="#">CONTACT</a></li>
       <li class="hideOnMobile"><a href="#">SHOP</a></li>
-      <!-- Knop voor het tonen van de sidebar -->
       <li class="menu-button" onclick="showSidebar()">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
           <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
@@ -213,14 +208,12 @@
  <div style="width: 30px; height: 60px;"></div>
 
   <script>
-    // Functie om de sidebar te tonen
     function showSidebar() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.style.display = 'flex';
       document.querySelector('.menu-button').style.display = 'none'; // Verberg de menu button als de sidebar open is
     }
 
-    // Functie om de sidebar te verbergen
     function hideSidebar() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.style.display = 'none';

@@ -22,4 +22,4 @@
         }
 
         // Roep de functie aan om navbar.html in te laden
-        loadComponent('componenten/navbar.html', 'navbar');
+        loadComponent('../page componenten/navbar.html', 'navbar');

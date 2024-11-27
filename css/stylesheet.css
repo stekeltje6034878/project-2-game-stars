@@ -1,0 +1,294 @@
+/* Algemene reset en standaardinstellingen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-duration: 0.8s;
+    font-family: "Poppins", "Merriweather", serif;
+}
+
+body {
+    padding-top: 80px;
+    color: #F8F4E9;
+    background-color: #8491A1;
+}
+
+h1 {
+    color: #2C486D;
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInText 1s 0.3s forwards;
+}
+
+p {
+    color: #F8F4E9;
+    max-width: calc(50% + 30px);
+    font-size: 25px;
+    opacity: 0;
+    animation: fadeInText 1s 0.3s forwards;
+}
+
+/* Animaties */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInField {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contactformulier */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.contact_h1, .contact_p {
+    text-align: center;
+}
+
+.styled-input {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    animation: fadeInField 1s 0.6s forwards;
+}
+
+.styled-input input,
+.styled-input textarea {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    color: #F8F4E9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-input input:focus,
+.styled-input textarea:focus {
+    outline: none;
+    border-color: #2C486D;
+    transform: scale(1.02);
+}
+
+.styled-input label {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #F8F4E9;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.styled-input input:focus ~ label,
+.styled-input textarea:focus ~ label {
+    top: -12px;
+    font-size: 14px;
+    color: #F8F4E9;
+    transform: translateY(-10px);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1c2b64;
+    color: #F8F4E9;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3d4b9e;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Navigatie en sidebar */
+.topbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.icon a:hover img {
+    scale: 1.1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    height: 60px;
+    margin: 0 5px;
+}
+
+nav li a img {
+    width: 100px;
+    height: auto;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, linear scale 1.3s;
+}
+
+nav a:hover {
+    color: white;
+    scale: 1.05;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;  /* Zorg ervoor dat de link de volledige breedte van de sidebar beslaat */
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    color: #333333;
+    text-decoration: none;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.sidebar a:hover {
+    background-color: #1c2b64;  /* Verandert de achtergrondkleur bij hover */
+    color: white;  /* Verandert de tekstkleur naar wit */
+    /* Verwijder de translateX zodat de tekst niet naar rechts verschuift */
+}
+
+
+
+.menu-button svg path {
+    fill: #333;
+    transition: fill 0.1s ease;
+}
+
+.menu-button svg path:hover {
+    fill: #ffffff;
+}
+
+/* Responsieve instellingen */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-button {
+        display: block;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) {
+    .menu-button {
+        display: none;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .topbar .bar {
+        display: flex;
+    }
+}

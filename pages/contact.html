@@ -4,196 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../js/navbar.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition-duration: 0.8s;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  padding-top: 40px;
-  color: #F8F4E9;
-  background-color: #8491A1;
-  font-family: Arial, sans-serif;
-}
-
-.contact-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  font-family: 'Old Standard TT', serif;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-h1 {
-  text-align: center;
-  color: #2C486D;
-  font-size: 36px;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeInText 1s 0.3s forwards;
-}
-
-p {
-   text-align: center;
-  color: #F8F4E9;
-  max-width: calc(50% + 30px);
-  font-size: 25px;
-  margin: 10px auto 20px auto;
-  opacity: 0;
-  animation: fadeInText 1s 0.3s forwards;
-}
-
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.styled-input {
-  margin-bottom: 30px; /* Vergroot de marge tussen de velden */
-  width: 100%;
-  position: relative;
-  opacity: 0;
-  animation: fadeInField 1s 0.6s forwards;
-}
-
-@keyframes fadeInField {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.styled-input input,
-.styled-input textarea {
-  width: 100%;
-  padding: 18px; /* Vergroot de padding voor meer ruimte */
-  font-size: 16px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background-color: #333;
-  color: #F8F4E9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease, transform 0.2s ease;
-}
-
-.styled-input input:focus,
-.styled-input textarea:focus {
-  outline: none;
-  border-color: #2C486D;
-  resize: vertical;
-  transform: scale(1.02);
-}
-
-.styled-input label {
-  position: absolute;
-  top: 20px; /* Verhoog de afstand van de top */
-  left: 25px; /* Vergroot de afstand aan de linkerzijde */
-  color: #F8F4E9; /* Lichtgrijze kleur voor labels */
-  font-size: 16px;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  font-weight: 500; /* Betere zichtbaarheid */
-  z-index: 1;
-}
-
-.styled-input input:focus ~ label,
-.styled-input textarea:focus ~ label {
-  top: -12px;
-  font-size: 14px; /* Maak de tekst wat kleiner bij focus */
-  color: #F8F4E9; /* Kleur verandert naar blauw wanneer gefocust */
-  transform: translateY(-10px);
-  font-weight: 700; /* Zwaardere lettertype bij focus */
-  letter-spacing: 1px; /* Voeg een beetje letterruimte toe voor een strakkere look */
-}
-
-/* Submit knop */
-.submit-btn {
-  width: 100%;
-  padding: 15px;
-  background-color: #1c2b64;
-  color: #F8F4E9;
-  border: none;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #3d4b9e;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.submit-btn:active {
-  transform: scale(0.98);
-}
-
-/* Responsieve instellingen */
-@media(max-width: 768px) {
-  .contact-form {
-    padding: 15px;
-    margin: 20px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-}
-
-  </style>
 </head>
 <body>
 
 <nav id="navbar"></nav>
 
-  <h1>hey! Neem gerust contact met ons op!</h1>
-  <p>
+  <h1 style="text-align: center;">hey! Neem gerust contact met ons op!</h1>
+  <p style="text-align: center;
+    margin: 10px auto 20px auto;">
     Heb je een vraag, een idee of wil je gewoon hallo zeggen?
     Vul het formulier hieronder in, en we nemen zo snel mogelijk contact met je op.
     We zijn er om je te helpen!
   </p>
 
   <div class="contact-form">
-    <h1>Contactformulier</h1>
-    <p>Neem gerust contact op!</p>
+    <h1 style="text-align: center;">Contactformulier</h1>
+    <p style="text-align: center;
+    margin: 10px auto 20px auto;">
+      Neem gerust contact op!
+    </p>
 
     <form action="{% url 'contact' %}" method="post">
       <div class="styled-input">
@@ -213,7 +49,7 @@ p {
         <label>Onderwerp</label>
       </div>
       <div class="styled-input">
-        <textarea name="message" required></textarea>
+        <textarea style="resize: vertical" name="message" required></textarea>
         <label>Bericht</label>
       </div>
       <button class="submit-btn" type="submit">Verzenden</button>

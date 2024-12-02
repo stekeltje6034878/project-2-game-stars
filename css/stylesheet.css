@@ -7,7 +7,13 @@
     font-family: "Poppins", "Merriweather", Tahoma, sans-serif;
 }
 
-body {
+#body-contactpage {
+    padding-top: 80px;
+    color: #F8F4E9;
+    background-color: #8491A1;
+}
+
+#body-merchpage  {
     padding-top: 80px;
     color: #F8F4E9;
     background-color: #8491A1;

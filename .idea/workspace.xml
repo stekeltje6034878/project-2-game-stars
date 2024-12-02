@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="ik heb de contactpage bijna af, ik ga er nu php aan toevoegen zodat het bijvoorbeeld word geprint of in een json bestand komt te staan.">
-      <change afterPath="$PROJECT_DIR$/page componenten/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/games.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page componenten/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/page componenten/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="klaar met puur html">
+      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -48,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Home.html.executor": "Run",
     "JavaScript Debug.contact.html.executor": "Run",
     "JavaScript Debug.footer.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
@@ -145,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732696994696</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="klaar met puur html">
+      <option name="closed" value="true" />
+      <created>1733141991776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141991776</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +172,7 @@
     <MESSAGE value="second pull" />
     <MESSAGE value="contact page gemaakt" />
     <MESSAGE value="ik heb de contactpage bijna af, ik ga er nu php aan toevoegen zodat het bijvoorbeeld word geprint of in een json bestand komt te staan." />
-    <option name="LAST_COMMIT_MESSAGE" value="ik heb de contactpage bijna af, ik ga er nu php aan toevoegen zodat het bijvoorbeeld word geprint of in een json bestand komt te staan." />
+    <MESSAGE value="klaar met puur html" />
+    <option name="LAST_COMMIT_MESSAGE" value="klaar met puur html" />
   </component>
 </project>

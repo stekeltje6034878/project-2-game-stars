@@ -12,6 +12,38 @@
   <meta name="author" content="Nataniel Bialek">
 </head>
 <body>
+
+<nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="/"><img src="../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/games.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/contact.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/merchandise.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+<div style="width: 30px; height: 80px;"></div>
 <header class="header-games-page">
   <h1>All New Games by Release Date</h1>
   <p>Find your next game for any platform. Filter by platform, genre, or release year.</p>
@@ -56,37 +88,53 @@
   <section class="games">
     <!-- Card 1 -->
     <div class="game-card">
-      <img src="../img/legends-of-zelda-breath-of-the-wild.jpg" alt="Legends Of Zelda Breath of the Wild">
+      <img src="../assets/legends-of-zelda-breath-of-the-wild.jpg" alt="Legends Of Zelda Breath of the Wild">
       <h3>Legends Of Zelda Breath Of The Wild</h3>
       <p>March 3, 2017</p>
     </div>
     <!-- Card 2 -->
     <div class="game-card">
-      <img src="../img/god-of-war-ragnarok.avif" alt="God Of War Ragnarok">
+      <img src="../assets/god-of-war-ragnarok.avif" alt="God Of War Ragnarok">
       <h3>God Of War Ragnarok</h3>
       <p>November 9, 2022</p>
     </div>
     <div class="game-card">
-      <img src="../img/Stardew-Valley.png" alt="Stardew Valley">
+      <img src="../assets/Stardew-Valley.png" alt="Stardew Valley">
       <h3>Stardew Valley</h3>
       <p>February 26, 2016</p>
     </div>
     <div class="game-card">
-      <img src="../img/assasins-creed-valhalla.avif" alt="Assasins Creed Valhalla">
+      <img src="../assets/assasins-creed-valhalla.avif" alt="Assasins Creed Valhalla">
       <h3>Assasins Creed Valhalla</h3>
       <p>November 10, 2020</p>
     </div>
     <div class="game-card">
-      <img src="../img/OneShot.jpg" alt="One Shot">
+      <img src="../assets/OneShot.jpg" alt="One Shot">
       <h3>One Shot</h3>
       <p>December 8, 2016</p>
     </div>
     <div class="game-card">
-      <img src="../img/RainWorld.jpg" alt="Rain World">
+      <img src="../assets/RainWorld.jpg" alt="Rain World">
       <h3>Rain World</h3>
       <p>March 28, 2017</p>
     </div>
   </section>
 </main>
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@example.com</a></p>
+                <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+                <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+                <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

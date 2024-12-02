@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="description" content=" This is our home page for the project 2 game stars ">
@@ -11,13 +12,11 @@
     <meta name="author" content="Nataniel Bialek">
 </head>
 <body class="body-home-page">
-<nav id="navbar"></nav>
 <main>
-    <section class="front-page">
+    <section class="front_page">
         <h1>Welcome to the Ultimate Game Review Destination!</h1>
         <p>Explore the latest game reviews, ratings, and recommendations.</p>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for Games" />
+                <div class="search-bar">
             <button>Explore Games</button>
         </div>
     </section>
@@ -25,20 +24,20 @@
     <section class="featured-games">
         <h2>Featured Games</h2>
         <p>Check out the trending games everyone is talking about.</p>
-        <button class="view-all">View All</button>
+        <button>View All</button>
         <div class="game-list">
             <div class="game">
-                <img src="../img/Stardew-Valley.png" alt="Assassin's Creed Valhalla" />
-                <h3>Stardew Valley</h3>
-                <p>PS4/5, Switch, PC</p>
+                <img src="assassins-creed.jpg" alt="Assassin's Creed Valhalla">
+                <h3>Assassin's Creed Valhalla</h3>
+                <p>PS5, Xbox Series X, PC</p>
             </div>
             <div class="game">
-                <img src="../img/OneShot.jpg" alt="Call of Duty: Warzone" />
-                <h3>One Shot</h3>
-                <p>PS4,PC</p>
+                <img src="call-of-duty-warzone.jpg" alt="Call of Duty: Warzone">
+                <h3>Call of Duty: Warzone</h3>
+                <p>PS4, Xbox One, PC</p>
             </div>
             <div class="game">
-                <img src="../img/legends-of-zelda-breath-of-the-wild.jpg" alt="The Legend of Zelda" />
+                <img src="zelda.jpg" alt="The Legend of Zelda">
                 <h3>The Legend of Zelda: Breath of the Wild</h3>
                 <p>Nintendo Switch</p>
             </div>
@@ -48,23 +47,33 @@
     <section class="latest-reviews">
         <h2>Latest Reviews</h2>
         <p>Discover what critics and players are saying about the newest releases.</p>
-        <div class="latest-reviews-content">
-            <div class="reviews">
-                <div class="review">
-                    <h4>GamingFanatic ⭐⭐⭐⭐⭐</h4>
-                    <p>Captivating storyline and stunning visuals!</p>
-                </div>
-                <div class="review">
-                    <h4>MasterGamer88 ⭐⭐⭐⭐</h4>
-                    <p>Innovative gameplay mechanics and depth.</p>
-                </div>
+        <button>Read More</button>
+        <div class="reviews">
+            <div class="review">
+                <p><strong>GamingFanatic:</strong> Captivating storyline and stunning visuals!</p>
             </div>
-            <div class="review-image-container">
-                <img src="../img/god-of-war-ragnarok.avif" alt="God of War Ragnarok">
+            <div class="review">
+                <p><strong>MasterGamer88:</strong> Innovative gameplay mechanics and depth.</p>
             </div>
         </div>
-        <button class="read-more">Read More</button>
+        <img src="god-of-war.jpg" alt="God of War Ragnarok">
     </section>
 </main>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@example.com</a></p>
+                <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+                <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+                <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

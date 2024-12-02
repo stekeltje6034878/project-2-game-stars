@@ -3,10 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/main.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is our home page for the Project 2: Game Stars.">
+    <meta name="keywords" content="Home, Home Page">
+    <meta name="author" content="Nataniel Bialek">
+
     <title>Home</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
-<body>
-    <nav id="navbar"></nav>
+<body class="body-home-page">
+    <!-- Navigation Bar -->
+    <nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="/"><img src="../../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Front Page Section -->
+        <section class="front-page">
+            <h1>Welcome to the Ultimate Game Review Destination!</h1>
+            <p>Explore the latest game reviews, ratings, and recommendations.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Games">
+                <button>Explore Games</button>
+            </div>
+        </section>
+
+        <!-- Featured Games Section -->
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <p>Check out the trending games everyone is talking about.</p>
+            <button class="view-all">View All</button>
+            <div class="game-list">
+                <!-- Game Item 1 -->
+                <div class="game">
+                    <img src="../assets/Stardew-Valley.png" alt="Stardew Valley">
+                    <h3>Stardew Valley</h3>
+                    <p>PS4/5, Switch, PC</p>
+                </div>
+                <!-- Game Item 2 -->
+                <div class="game">
+                    <img src="../assets/OneShot.jpg" alt="One Shot">
+                    <h3>One Shot</h3>
+                    <p>PS4, PC</p>
+                </div>
+                <!-- Game Item 3 -->
+                <div class="game">
+                    <img src="../assets/legends-of-zelda-breath-of-the-wild.jpg" alt="The Legend of Zelda: Breath of the Wild">
+                    <h3>The Legend of Zelda: Breath of the Wild</h3>
+                    <p>Nintendo Switch</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Reviews Section -->
+        <section class="latest-reviews">
+            <h2>Latest Reviews</h2>
+            <p>Discover what critics and players are saying about the newest releases.</p>
+            <div class="latest-reviews-content">
+                <!-- Reviews Container -->
+                <div class="reviews">
+                    <div class="review">
+                        <h4>GamingFanatic ⭐⭐⭐⭐⭐</h4>
+                        <p>Captivating storyline and stunning visuals!</p>
+                    </div>
+                    <div class="review">
+                        <h4>MasterGamer88 ⭐⭐⭐⭐</h4>
+                        <p>Innovative gameplay mechanics and depth.</p>
+                    </div>
+                </div>
+                <!-- Review Image Container -->
+                <div class="review-image-container">
+                    <img src="../assets/god-of-war-ragnarok.avif" alt="God of War Ragnarok">
+                </div>
+            </div>
+            <button class="read-more">Read More</button>
+        </section>
+    </main>
 </body>
 </html>

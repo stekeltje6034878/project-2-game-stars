@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="Fotos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="klaar met puur html">
       <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,31 +20,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;state&quot;: &quot;OPEN&quot;
-    }
-  ],
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/stekeltje6034878/project-2-game-stars.git&quot;,
-    &quot;accountId&quot;: &quot;8c0d7080-2cf4-4406-a419-85051fd91667&quot;
-  }
-}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -56,29 +41,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.contact.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.navbar.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.navbar.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thijs/PycharmProjects/project 2 game stars&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Home.html.executor": "Run",
+    "JavaScript Debug.contact.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.merchandise.html.executor": "Run",
+    "JavaScript Debug.merchendise.html.executor": "Run",
+    "JavaScript Debug.navbar.html.executor": "Run",
+    "Node.js.navbar.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/thijs/IdeaProjects/Portofolio_website",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\componenten" />
@@ -94,7 +82,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -110,10 +98,9 @@
       <workItem from="1732110201515" duration="567000" />
       <workItem from="1732620933049" duration="2184000" />
       <workItem from="1732623566844" duration="3681000" />
-      <workItem from="1732710433238" duration="20000" />
-      <workItem from="1732872938031" duration="8000" />
-      <workItem from="1732872966139" duration="4999000" />
-      <workItem from="1733141443744" duration="664000" />
+      <workItem from="1732714296568" duration="10000" />
+      <workItem from="1732878159532" duration="1314000" />
+      <workItem from="1733129740834" duration="2121000" />
     </task>
     <task id="LOCAL-00001" summary="first pull">
       <option name="closed" value="true" />
@@ -147,43 +134,45 @@
       <option name="project" value="LOCAL" />
       <updated>1732622997201</updated>
     </task>
-    <task id="LOCAL-00005" summary="Ik heb de home pagina bijna helemaal af, zit nu ff te experimenteren met de fotos en de header + footer omdat iets niet wilt werken">
+    <task id="LOCAL-00005" summary="ik heb de contactpage bijna af, ik ga er nu php aan toevoegen zodat het bijvoorbeeld word geprint of in een json bestand komt te staan.">
       <option name="closed" value="true" />
-      <created>1732874907301</created>
+      <created>1732696994696</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1732874907301</updated>
+      <updated>1732696994696</updated>
     </task>
-    <task id="LOCAL-00006" summary="Fotos">
+    <task id="LOCAL-00006" summary="klaar met puur html">
       <option name="closed" value="true" />
-      <created>1732875383180</created>
+      <created>1733141991776</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1732875383180</updated>
+      <updated>1733141991776</updated>
     </task>
-    <task id="LOCAL-00007" summary="Fotos">
-      <option name="closed" value="true" />
-      <created>1732875518699</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1732875518699</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first pull" />
     <MESSAGE value="second pull" />
     <MESSAGE value="contact page gemaakt" />
     <MESSAGE value="ik heb de contactpage bijna af, ik ga er nu php aan toevoegen zodat het bijvoorbeeld word geprint of in een json bestand komt te staan." />
-    <MESSAGE value="Ik heb de home pagina bijna helemaal af, zit nu ff te experimenteren met de fotos en de header + footer omdat iets niet wilt werken" />
-    <MESSAGE value="Fotos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fotos" />
+    <MESSAGE value="klaar met puur html" />
+    <option name="LAST_COMMIT_MESSAGE" value="klaar met puur html" />
   </component>
 </project>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="../js/navbar.js"></script>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="description" content=" This is our home page for the project 2 game stars ">
@@ -12,13 +11,42 @@
     <meta name="author" content="Nataniel Bialek">
 </head>
 <body class="body-home-page">
-<nav id="navbar"></nav>
+
+  <nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="/"><img src="../../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
 <main>
-    <section class="front-page">
+    <section class="front_page">
         <h1>Welcome to the Ultimate Game Review Destination!</h1>
         <p>Explore the latest game reviews, ratings, and recommendations.</p>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for Games" />
+                <div class="search-bar">
             <button>Explore Games</button>
         </div>
     </section>
@@ -26,20 +54,20 @@
     <section class="featured-games">
         <h2>Featured Games</h2>
         <p>Check out the trending games everyone is talking about.</p>
-        <button class="view-all">View All</button>
+        <button>View All</button>
         <div class="game-list">
             <div class="game">
-                <img src="../img/assasins-creed-valhalla.avif" alt="Assassin's Creed Valhalla" />
+                <img src="assassins-creed.jpg" alt="Assassin's Creed Valhalla">
                 <h3>Assassin's Creed Valhalla</h3>
                 <p>PS5, Xbox Series X, PC</p>
             </div>
             <div class="game">
-                <img src="../img/call-of-duty-warzone.jpg" alt="Call of Duty: Warzone" />
+                <img src="call-of-duty-warzone.jpg" alt="Call of Duty: Warzone">
                 <h3>Call of Duty: Warzone</h3>
                 <p>PS4, Xbox One, PC</p>
             </div>
             <div class="game">
-                <img src="../img/legends-of-zelda-breath-of-the-wild.jpg" alt="The Legend of Zelda" />
+                <img src="zelda.jpg" alt="The Legend of Zelda">
                 <h3>The Legend of Zelda: Breath of the Wild</h3>
                 <p>Nintendo Switch</p>
             </div>
@@ -49,22 +77,16 @@
     <section class="latest-reviews">
         <h2>Latest Reviews</h2>
         <p>Discover what critics and players are saying about the newest releases.</p>
-        <div class="latest-reviews-content">
-            <div class="reviews">
-                <div class="review">
-                    <h4>GamingFanatic ⭐⭐⭐⭐⭐</h4>
-                    <p>Captivating storyline and stunning visuals!</p>
-                </div>
-                <div class="review">
-                    <h4>MasterGamer88 ⭐⭐⭐⭐</h4>
-                    <p>Innovative gameplay mechanics and depth.</p>
-                </div>
+        <button>Read More</button>
+        <div class="reviews">
+            <div class="review">
+                <p><strong>GamingFanatic:</strong> Captivating storyline and stunning visuals!</p>
             </div>
-            <div class="review-image-container">
-                <img src="../img/god-of-war-ragnarok.avif" alt="God of War Ragnarok">
+            <div class="review">
+                <p><strong>MasterGamer88:</strong> Innovative gameplay mechanics and depth.</p>
             </div>
         </div>
-        <button class="read-more">Read More</button>
+        <img src="god-of-war.jpg" alt="God of War Ragnarok">
     </section>
 </main>
 </body>

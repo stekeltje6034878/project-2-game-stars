@@ -3,189 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/stylesheet.css">
 
-    .topbar {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      right: 20px;
-      z-index: 9999;
-      background-color: #000000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 10px;
-    }
-
-    .icon a:hover img {
-      scale: 1.1;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-    }
-
-    nav li {
-      height: 60px;
-      margin: 0 5px;
-    }
-
-    nav li a img {
-      width: 100px;
-      height: auto;
-    }
-
-    nav a {
-      height: 100%;
-      padding: 0 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      color: #333333;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s, linear scale 1.3s;
-    }
-
-    nav a:hover {
-      color: white;
-      transition: scale 0.5s;
-      scale: 1.05;
-    }
-
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 250px;
-      background-color: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(12px);
-      box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.2);
-      list-style: none;
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      border-radius: 10px;
-      padding: 20px 0 20px 20px;
-    }
-
-    .sidebar li {
-      width: 100%;
-    }
-
-    /* Standaard stijl voor de links in de sidebar */
-    .sidebar a {
-      width: 100%;
-      font-size: 18px;
-      padding: 15px;
-      color: #333333;
-      text-decoration: none;
-      transition: color 0.5s linear, transform 0.5s linear;
-    }
-
-    .sidebar a:hover {
-      background-color: #1c2b64;
-      color: white;
-      transition: color 0.5s linear, transform 0.5s linear;
-      transform: translateX(10px); /* Verschuift de tekst 10px naar rechts bij hover */
-    }
-
-    /* Zorg ervoor dat de menu-knop goed zichtbaar is */
-    .menu-button {
-      display: block;
-    }
-
-    /* De knoppen voor het openen en sluiten van de sidebar */
-    .bar li {
-      padding: 0 10px;
-      margin: 5px;
-    }
-
-    /* Veranderingen voor de show-knop (groen) */
-    .menu-button svg path {
-      fill: #333;
-      transition: fill 0.1s ease;
-    }
-
-    .menu-button svg path:hover {
-      fill: #ffffff;
-    }
-
-    /* Veranderingen voor de hide-knop (rood) */
-    .hide-button svg path {
-      fill: #333; /* Rood standaard */
-      transition: fill 0.1s ease;
-    }
-
-    /* Bij hover wordt de kleur wit */
-    .hide-button:hover svg path {
-      fill: #ffffff; /* Wit bij hover */
-    }
-
-    /* Responsieve instellingen voor mobiel */
-    @media(max-width: 400px) {
-      .sidebar {
-        width: 100%;
-        right: 0px;
-      }
-    }
-
-    @media(max-width: 800px) {
-      .menu-button {
-        display: block;
-      }
-
-      .hideOnMobile {
-        display: none;
-      }
-    }
-
-    @media(min-width: 801px) {
-      .menu-button {
-        display: none;
-      }
-      .sidebar {
-        display: none !important;
-      }
-      .topbar .bar {
-        display: flex;
-      }
-    }
-
-  </style>
 </head>
 <body>
   <nav class="topbar">
     <ul class="bar">
-      <li class="icon"><a href="/"><img src="../assets/logo.png" alt="Logo"></a></li>
+      <li class="icon"><a href="/"><img src="../../assets/logo.png" alt="Logo"></a></li>
     </ul>
 
-    <!-- Sidebar -->
     <ul class="sidebar">
       <li class="hide-button" onclick="hideSidebar()">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
           <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
         </svg></a>
       </li>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">GAMES</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li><a href="#">SHOP</a></li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
     </ul>
 
     <ul class="bar">
-      <li class="hideOnMobile"><a href="#">HOME</a></li>
-      <li class="hideOnMobile"><a href="#">GAMES</a></li>
-      <li class="hideOnMobile"><a href="#">CONTACT</a></li>
-      <li class="hideOnMobile"><a href="#">SHOP</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">SHOP</a></li>
       <li class="menu-button" onclick="showSidebar()">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
           <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
@@ -194,19 +38,5 @@
     </ul>
   </nav>
  <div style="width: 30px; height: 60px;"></div>
-
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'flex';
-      document.querySelector('.menu-button').style.display = 'none'; // Verberg de menu button als de sidebar open is
-    }
-
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'none';
-      document.querySelector('.menu-button').style.display = 'block'; // Toon de menu button als de sidebar gesloten is
-    }
-  </script>
 </body>
 </html>

@@ -3,42 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../js/navbar.js"></script>
   <link rel="stylesheet" href="../css/stylesheet.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--  <script src="../js/main.js"></script>-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav id="navbar"></nav>
+<nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="../pages/index.html"><img src="../assets/logo.png" alt="Logo"></a></li>
+    </ul>
 
-  <h1 style="text-align: center;">hey! Neem gerust contact met ons op!</h1>
-  <p style="text-align: center;
-    margin: 10px auto 20px auto;">
-    Heb je een vraag, een idee of wil je gewoon hallo zeggen?
-    Vul het formulier hieronder in, en we nemen zo snel mogelijk contact met je op.
-    We zijn er om je te helpen!
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/games.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/contact.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/merchandise.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="sizebox" style="height: 60px"></div>
+  <h1 style="text-align: center;">Hey! Feel free to contact us!</h1>
+  <p style="text-align: center; margin: 10px auto 20px auto;">
+    Do you have a question, an idea, or just want to say hello?
+    Fill out the form below, and we will get in touch as soon as possible.
+    We're here to help!
   </p>
 
   <div class="contact-form">
-    <h1 style="text-align: center;">Contactformulier</h1>
-    <p style="text-align: center;
-    margin: 10px auto 20px auto;">
-      Neem gerust contact op!
+    <h1 style="text-align: center;">Contact Form</h1>
+    <p style="text-align: center; margin: 10px auto 20px auto;">
+      Feel free to reach out!
     </p>
 
-    <form action="{% url 'contact' %}" method="post">
+    <form method="post">
       <div class="styled-input">
         <input type="text" name="name" required />
-        <label>Volledige Naam</label>
+        <label>Full Name</label>
       </div>
       <div class="styled-input">
         <input type="email" name="email" required />
-        <label>E-mail</label>
+        <label>Email</label>
       </div>
       <div class="styled-input">
         <input type="text" name="school" required />
@@ -46,15 +73,32 @@
       </div>
       <div class="styled-input">
         <input type="text" name="subject" required />
-        <label>Onderwerp</label>
+        <label>Subject</label>
       </div>
       <div class="styled-input">
         <textarea style="resize: vertical" name="message" required></textarea>
-        <label>Bericht</label>
+        <label>Message</label>
       </div>
-      <button class="submit-btn" type="submit">Verzenden</button>
+      <button class="submit-btn" type="submit">Submit</button>
     </form>
   </div>
 
+  <div style="height: 20px"></div>
+
+  <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-contact">
+              <h4>Contact</h4>
+              <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@gamestar.com</a></p>
+              <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+          </div>
+          <div class="footer-social">
+              <h4>Follow Us</h4>
+              <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+              <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+              <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>

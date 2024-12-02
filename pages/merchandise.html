@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+<!--  <script src="../js/main.js"></script>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsplash Product Images</title>
+  <style>
+  </style>
+</head>
+<body>
+<nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="../pages/index.html"><img src="../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/games.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/contact.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/merchandise.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div style="width: 30px; height: 100px;"></div>
+  <h1 style="text-align: center; margin-bottom: 20px;">Merchandise Products</h1>
+  <div class="gallery" id="gallery"></div>
+
+    <div style="height: 20px"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@example.com</a></p>
+                <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+                <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+                <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+
+<!--<script>-->
+<!--    // Vervang dit met je eigen API-sleutel-->
+<!--    const ACCESS_KEY = 'cygsFVYhQHqpQIt89fAndKvdGTOYFTqA3nnFMhHFCyc';-->
+<!--    const BASE_URL = 'https://api.unsplash.com';-->
+<!--    // Wijzig de zoekterm naar 'gaming products' om specifieke game-gerelateerde producten te krijgen-->
+<!--    const URL = `${BASE_URL}/search/photos?query=gaming%20products&orientation=landscape&per_page=30&client_id=${ACCESS_KEY}`;-->
+
+<!--    function getRandomPrice(min, max) {-->
+<!--        const price = (Math.random() * (max - min) + min).toFixed(2);-->
+<!--        return `€${price}`;-->
+<!--    }-->
+
+<!--    async function fetchImages() {-->
+<!--        try {-->
+<!--            const response = await fetch(URL);-->
+<!--            if (!response.ok) {-->
+<!--                throw new Error(`Error: ${response.status}`);-->
+<!--            }-->
+<!--            const data = await response.json();-->
+
+<!--            const gallery = document.getElementById('gallery');-->
+<!--            data.results.forEach(image => {-->
+<!--                // Maak een container voor elke afbeelding-->
+<!--                const imageContainer = document.createElement('div');-->
+<!--                imageContainer.classList.add('image-container');-->
+
+<!--                // Maak een <img> element en stel de bron in-->
+<!--                const imgElement = document.createElement('img');-->
+<!--                imgElement.src = image.urls.small;-->
+<!--                imgElement.alt = image.alt_description || 'Game Product Image';-->
+
+<!--                // Maak een titel voor de afbeelding-->
+<!--                const titleElement = document.createElement('div');-->
+<!--                titleElement.classList.add('title');-->
+<!--                titleElement.textContent = image.alt_description || 'Geen titel beschikbaar';-->
+
+<!--                // Maak een prijs voor de afbeelding-->
+<!--                const priceElement = document.createElement('button');-->
+<!--                priceElement.classList.add('price');-->
+<!--                priceElement.textContent = `Price: ${getRandomPrice(10, 200)}`;-->
+
+<!--                // Maak een beschrijving voor de afbeelding-->
+<!--                const descriptionElement = document.createElement('div');-->
+<!--                descriptionElement.classList.add('description');-->
+<!--                descriptionElement.textContent = `description: ${image.description || 'Geen beschrijving beschikbaar'}`;-->
+
+<!--                // Voeg de elementen toe aan de container-->
+<!--                imageContainer.appendChild(imgElement);-->
+<!--                imageContainer.appendChild(titleElement);-->
+<!--                imageContainer.appendChild(descriptionElement);-->
+<!--                imageContainer.appendChild(priceElement);-->
+
+<!--                // Voeg de container toe aan de gallery-->
+<!--                gallery.appendChild(imageContainer);-->
+<!--            });-->
+<!--        } catch (error) {-->
+<!--            console.error('Error:', error);-->
+<!--        }-->
+<!--    }-->
+
+<!--    document.addEventListener('DOMContentLoaded', fetchImages);-->
+<!--</script>-->
+
+</body>
+</html>

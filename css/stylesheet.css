@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     transition-duration: 0.8s;
-    font-family: "Poppins", "Merriweather", serif;
+    font-family: "Poppins", "Merriweather", Tahoma, sans-serif;
 }
 
 body {
@@ -29,7 +29,6 @@ p {
     animation: fadeInText 1s 0.3s forwards;
 }
 
-/* Animaties */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -63,7 +62,6 @@ p {
     }
 }
 
-/* Contactformulier */
 .contact-form {
     width: 100%;
     max-width: 600px;
@@ -153,105 +151,6 @@ p {
     transform: scale(0.98);
 }
 
-/* Navigatie en sidebar */
-.topbar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    z-index: 9999;
-    background-color: #000000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.icon a:hover img {
-    scale: 1.1;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-nav li {
-    height: 60px;
-    margin: 0 5px;
-}
-
-nav li a img {
-    width: 100px;
-    height: auto;
-}
-
-nav a {
-    height: 100%;
-    padding: 0 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #333333;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s, linear scale 1.3s;
-}
-
-nav a:hover {
-    color: white;
-    scale: 1.05;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(12px);
-    box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.sidebar a {
-    display: block;  /* Zorg ervoor dat de link de volledige breedte van de sidebar beslaat */
-    width: 100%;
-    font-size: 18px;
-    padding: 15px;
-    color: #333333;
-    text-decoration: none;
-    transition: background-color 0.5s linear, color 0.5s linear;
-}
-
-.sidebar a:hover {
-    background-color: #1c2b64;  /* Verandert de achtergrondkleur bij hover */
-    color: white;  /* Verandert de tekstkleur naar wit */
-    /* Verwijder de translateX zodat de tekst niet naar rechts verschuift */
-}
-
-
-
-.menu-button svg path {
-    fill: #333;
-    transition: fill 0.1s ease;
-}
-
-.menu-button svg path:hover {
-    fill: #ffffff;
-}
-
-/* Responsieve instellingen */
 @media (max-width: 768px) {
     .contact-form {
         padding: 15px;
@@ -262,33 +161,349 @@ nav a:hover {
         font-size: 30px;
     }
 }
+    @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
-@media (max-width: 400px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition-duration: 0.8s;
+    }
+    body {
+      padding-top: 80px;
+      color: #4b4b4b;
+      font-family: Arial, sans-serif;
+    }
+    .topbar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #000000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    .icon a:hover img {
+      scale: 1.1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      height: 60px;
+      margin: 0 5px;
+    }
+
+    nav li a img {
+      width: 100px;
+      height: auto;
+    }
+
+    nav a {
+      height: 100%;
+      padding: 0 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #4e4e4e;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s, linear scale 1.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      transition: scale 0.5s;
+      scale: 1.05;
+    }
+
     .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, 0.2);
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border-radius: 10px;
+      padding: 20px 0 20px 20px;
+    }
+
+    .sidebar li {
+      width: 100%;
+    }
+
+    /* Standaard stijl voor de links in de sidebar */
+    .sidebar a {
+      width: 100%;
+      font-size: 18px;
+      padding: 15px;
+      color: #333333;
+      text-decoration: none;
+      transition: color 0.5s linear, transform 0.5s linear;
+    }
+
+    .sidebar a:hover {
+      background-color: #1c2b64;
+      color: white;
+      transition: color 0.5s linear, transform 0.5s linear;
+      transform: translateX(10px); /* Verschuift de tekst 10px naar rechts bij hover */
+    }
+
+    /* Zorg ervoor dat de menu-knop goed zichtbaar is */
+    .menu-button {
+      display: block;
+    }
+
+    /* De knoppen voor het openen en sluiten van de sidebar */
+    .bar li {
+      padding: 0 10px;
+      margin: 5px;
+    }
+
+    /* Veranderingen voor de show-knop (groen) */
+    .menu-button svg path {
+      fill: #333;
+      transition: fill 0.1s ease;
+    }
+
+    .menu-button svg path:hover {
+      fill: #ffffff;
+    }
+
+    /* Veranderingen voor de hide-knop (rood) */
+    .hide-button svg path {
+      fill: #333; /* Rood standaard */
+      transition: fill 0.1s ease;
+    }
+
+    /* Bij hover wordt de kleur wit */
+    .hide-button:hover svg path {
+      fill: #ffffff; /* Wit bij hover */
+    }
+
+    /* Responsieve instellingen voor mobiel */
+    @media(max-width: 400px) {
+      .sidebar {
         width: 100%;
+        right: 0px;
+      }
     }
-}
 
-@media (max-width: 800px) {
-    .menu-button {
+    @media(max-width: 800px) {
+      .menu-button {
         display: block;
+      }
+
+      .hideOnMobile {
+        display: none;
+      }
     }
 
-    .hideOnMobile {
+    @media(min-width: 801px) {
+      .menu-button {
         display: none;
+      }
+      .sidebar {
+        display: none !important;
+      }
+      .topbar .bar {
+        display: flex;
+      }
     }
+
+    .title_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .page_title{
+        text-align: center;
+        padding: 10px 20px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+        font-size: 6vw;
+    }
+
+    .shop-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        padding: 20px 40px 20px 40px;
+    }
+
+    .product-card {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .product-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .product-price {
+        color: #28a745;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .product-content {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-@media (min-width: 801px) {
-    .menu-button {
-        display: none;
-    }
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
 
-    .sidebar {
-        display: none !important;
-    }
+.image-container img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Ruimte tussen afbeelding en andere elementen */
+    flex-shrink: 0;
+}
 
-    .topbar .bar {
-        display: flex;
+.title, .price, .description, .author {
+  width: 100%; /* Zorgt ervoor dat de tekstblokken de volle breedte gebruiken */
+  text-align: center; /* Zorgt voor gecentreerde tekst */
+  margin-top: 5px;
+    padding: 10px;
+}
+
+.price {
+  background-color: #1c2b64;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+   margin-top: auto;
+}
+
+.price:hover {
+  background-color: #3d4b9e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.author {
+  font-size: 0.8em;
+  color: #888;
+}
+
+
+    @media (max-width: 768px) {
+      .gallery {
+        gap: 15px;
+      }
+      .image-container {
+        width: 100%;
+        max-width: 400px;
+      }
     }
+/* General footer styles */
+.footer {
+    background-color: #0B0F1A;
+    color: #F8F4E9;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-contact,
+.footer-social {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #2C486D;
+    padding-bottom: 5px;
+}
+
+.footer a {
+    color: #8491A1;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #F8F4E9;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.2em;
+    color: #8491A1;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #F8F4E9;
 }

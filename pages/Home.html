@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="../js/navbar.js"></script>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="description" content=" This is our home page for the project 2 game stars ">
@@ -12,6 +11,37 @@
     <meta name="author" content="Nataniel Bialek">
 </head>
 <body class="body-home-page">
+
+  <nav class="topbar">
+    <ul class="bar">
+      <li class="icon"><a href="/"><img src="../../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li class="hide-button" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg></a>
+      </li>
+      <li><a href="../pages/index.html">HOME</a></li>
+      <li><a href="../pages/games.html">GAMES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+      <li><a href="../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+      <li class="hideOnMobile"><a href="../pages/index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">GAMES</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">CONTACT</a></li>
+      <li class="hideOnMobile"><a href="../pages/index.html">SHOP</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+
 <main>
     <section class="front_page">
         <h1>Welcome to the Ultimate Game Review Destination!</h1>

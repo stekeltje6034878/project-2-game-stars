@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="volledig klaar, hier ga ik niks meer aan veranderen">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page componenten/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/page componenten/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +76,11 @@
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\componenten" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\assets" />
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\page componenten" />
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars" />
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\assets" />
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\js" />
-      <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\componenten" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -178,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733144119567</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="volledig klaar, hier ga ik niks meer aan veranderen">
+      <option name="closed" value="true" />
+      <created>1733150544766</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733150544766</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

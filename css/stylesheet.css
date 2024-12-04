@@ -1035,3 +1035,18 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
+
+#reviewheader {
+    margin: 20px auto;
+    background-color: #1c2b64;
+    height: 120px;
+}
+
+.gameName {
+    margin-left: 20px;
+}
+#reviewImg {
+    margin: auto;
+    width: 80%;
+    display: block;
+}

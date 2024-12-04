@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voeg hier een beschrijving van je pagina toe.">
+  <meta name="keywords" content="sleutelwoord1, sleutelwoord2, sleutelwoord3">
+  <meta name="author" content="Thijs Stekelenburg">
+  <link rel="stylesheet", href="../css/stylesheet.css">
+  <title>easy_backend</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+
+    #reviewheader {
+      margin: 20px auto;
+      background-color: #1c2b64;
+      height: 120px;
+    }
+
+    .gameName {
+      margin-left: 20px;
+    }
+    #reviewImg {
+      margin: auto;
+      width: 80%;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+ <header id="reviewheader">
+   <h1 class="gameName"></h1>
+ </header>
+ <section>
+   <img id="reviewImg" src="" alt="game">
+ </section>
+</body>
+
+<script defer>
+  const title = document.querySelector(".gameName");
+  image = document.getElementById('reviewImg')
+
+
+
+
+  const games = {
+    id1: {
+      name: 'God Of War Ragnarok',
+      img: '../assets/god-of-war-ragnarok.avif'},
+    id2: {
+      name: 'Stardew Valley',
+      img: "../assets/Stardew-Valley.png"
+    },
+    id3: {
+      name: 'Assasins Creed Valhalla',
+      img: '../assets/assasins-creed-valhalla.avif'
+    },
+  }
+
+  let selectedGameId = 'id2'
+
+  if (selectedGameId in games) {
+    image.src = games[selectedGameId].img
+    title.innerHTML = games[selectedGameId].name
+  }
+
+
+</script>
+
+</html>

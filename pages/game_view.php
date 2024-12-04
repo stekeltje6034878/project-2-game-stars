@@ -40,7 +40,7 @@
     <h1 class="gameName"><?php echo $name ?></h1>
 </header>
 <section>
-    <img id="reviewImg" src= <?php echo $img ?> alt="game">
+    <img id="reviewImg" src= <?php echo $img ?> ''>
 </section>
 </body>
 

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="volledig klaar, nu is het ook daatwerkelijk klaar">
-      <change afterPath="$PROJECT_DIR$/pages/game_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/game_view.php" afterDir="false" />
+    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="nog een push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/game_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -197,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733301667379</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="nog een push">
+      <option name="closed" value="true" />
+      <created>1733306699448</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733306699448</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +228,7 @@
     <MESSAGE value="klaar met puur html" />
     <MESSAGE value="volledig klaar, hier ga ik niks meer aan veranderen" />
     <MESSAGE value="volledig klaar, nu is het ook daatwerkelijk klaar" />
-    <option name="LAST_COMMIT_MESSAGE" value="volledig klaar, nu is het ook daatwerkelijk klaar" />
+    <MESSAGE value="nog een push" />
+    <option name="LAST_COMMIT_MESSAGE" value="nog een push" />
   </component>
 </project>

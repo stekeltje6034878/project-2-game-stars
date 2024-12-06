@@ -39,34 +39,55 @@
 </body>
 
 <script defer>
-  const title = document.querySelector(".gameName");
-  image = document.getElementById('reviewImg')
+    // Selecteer de elementen uit de HTML
+    const title = document.querySelector(".gameName");
+    const image = document.getElementById("reviewImg");
 
+    // Definieer de game data
+    const games = {
+        id1: {
+            name: 'God Of War Ragnarok',
+            img: '../assets/god-of-war-ragnarok.avif'
+        },
+        id2: {
+            name: 'Stardew Valley',
+            img: "../assets/Stardew-Valley.png"
+        },
+        id3: {
+            name: 'The Legend of Zelda: Breath of the Wild',
+            img: "../assets/zelda-breath-of-the-wild.jpg"
+        }
+    };
 
+    // Variabele om de geselecteerde game te bepalen
+    let selectedGameId = 'id2'; // Pas dit aan om een andere game te tonen
 
+    // Gebruik een switch-statement om de juiste game weer te geven
+    switch (selectedGameId) {
+        case 'id1':
+            title.innerHTML = `${games.id1.name}`;
+            image.src = `${games.id1.img}`;
+            console.log(`De game op de pagina is: ${games.id1.name}`);
+            break;
 
-  const games = {
-    id1: {
-      name: 'God Of War Ragnarok',
-      img: '../assets/god-of-war-ragnarok.avif'},
-    id2: {
-      name: 'Stardew Valley',
-      img: "../assets/Stardew-Valley.png"
-    },
-    id3: {
-      name: 'Assasins Creed Valhalla',
-      img: '../assets/assasins-creed-valhalla.avif'
-    },
-  }
+        case 'id2':
+            title.innerHTML = `${games.id2.name}`;
+            image.src = `${games.id2.img}`;
+            console.log(`De game op de pagina is: ${games.id2.name}`);
+            break;
 
-  let selectedGameId = 'id2'
+        case 'id3':
+            title.innerHTML = `${games.id3.name}`;
+            image.src = `${games.id3.img}`;
+            console.log(`De game op de pagina is: ${games.id3.name}`);
+            break;
 
-  if (selectedGameId in games) {
-    image.src = games[selectedGameId].img
-    title.innerHTML = games[selectedGameId].name
-  }
-
-
+        default:
+            console.error("Ongeldig game ID geselecteerd!");
+            title.innerHTML = "Game niet gevonden";
+            image.src = "";
+    }
 </script>
+
 
 </html>

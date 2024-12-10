@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="volledig klaar, nu is het ook daatwerkelijk klaar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/game_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/game_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/game_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,9 @@
     "JavaScript Debug.Home.html.executor": "Run",
     "JavaScript Debug.contact.html.executor": "Run",
     "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.game-review-rainworld.html.executor": "Run",
     "JavaScript Debug.game_review.html.executor": "Run",
+    "JavaScript Debug.game_view.html.executor": "Run",
     "JavaScript Debug.game_view.php.executor": "Run",
     "JavaScript Debug.games.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
@@ -105,7 +106,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
+        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
       </set>
     </attachedChunks>
   </component>
@@ -126,6 +128,7 @@
       <workItem from="1733129740834" duration="2121000" />
       <workItem from="1733301637488" duration="4104000" />
       <workItem from="1733313796549" duration="2456000" />
+      <workItem from="1733740734882" duration="2752000" />
     </task>
     <task id="LOCAL-00001" summary="first pull">
       <option name="closed" value="true" />

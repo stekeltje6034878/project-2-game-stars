@@ -1033,7 +1033,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* General Styles */
-.body-rain-world {
+.body-game-review-nataniel {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -1042,20 +1042,20 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* Front Page Section */
-.front-page-rain-world {
+.front-page-game-review-nataniel {
     position: relative;
     text-align: center;
     color: #F8F4E9;
 }
 
-.front-page-rain-world img {
+.front-page-game-review-nataniel img {
     width: 100%;
     max-height: 600px;
     object-fit: cover;
     filter: brightness(70%);
 }
 
-.rain-world-content {
+.front-page-content-game-review-nataniel {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1064,17 +1064,17 @@ input[type="range"]::-moz-range-thumb {
     z-index: 10;
 }
 
-.front-page-rain-world h2 {
+.front-page-game-review-nataniel h2 {
     font-size: 50px;
     color: #8491A1;
 }
 
-.front-page-rain-world p {
+.front-page-game-review-nataniel p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.front-page-rain-world button {
+.front-page-game-review-nataniel button {
     padding: 10px 30px;
     font-size: 16px;
     background-color: #2C486D;
@@ -1085,22 +1085,22 @@ input[type="range"]::-moz-range-thumb {
     transition: all 0.3s ease;
 }
 
-.front-page-rain-world button:hover {
+.front-page-game-review-nataniel button:hover {
     background-color: #8491A1;
 }
 
 /* Main Content */
-.main-content-rain-world {
+.main-content-game-review-nataniel {
     padding: 20px 40px;
 }
 
-.scores-rain-world-section {
+.scores-section-game-review-nataniel {
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0;
 }
 
-.score-card-rain-world {
+.score-card-game-review-nataniel {
     background: #0B0F1A;
     padding: 20px;
     border-radius: 8px;
@@ -1109,121 +1109,61 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.score-card-rain-world h3 {
+.score-card-game-review-nataniel h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #F8F4E9;
 }
 
-.score-value-rain-world {
+.score-value-game-review-nataniel {
     font-size: 50px;
     color: #8491A1;
     font-weight: bold;
 }
 
 /* Details Section */
-.details-rain-world {
+.details-game-review-nataniel {
     display: flex;
     gap: 20px;
     margin: 40px 0;
 }
 
-.details-image-rain-world img {
+.details-image-game-review-nataniel img {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-#game-image-rain-world {
+#game-image-game-review-nataniel {
     max-width: 90%;
 }
 
-.details-info-rain-world h3 {
+.details-info-game-review-nataniel h3 {
     font-size: 24px;
     color: #8491A1;
     margin-bottom: 10px;
 }
 
-/* Reviews Section */
-.reviews-section-rain-world {
-    margin: 40px 0;
-}
-
-.review-cards-rain-world {
-    display: flex;
-    gap: 20px;
-}
-
-.review-card-rain-world {
-    background: #0B0F1A;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    flex: 1;
-}
-
-.review-card-rain-world p {
-    margin: 0;
-    font-style: italic;
-    color: #F8F4E9;
-}
-
-.review-card-rain-world span {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #8491A1;
-}
-
-/* Form Section */
-.review-form-section-rain-world {
-    background: #0B0F1A;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-.review-form-section-rain-world h3 {
-    margin-bottom: 20px;
-    color: #F8F4E9;
-}
-
-.review-form-section-rain-world form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.review-form-section-rain-world input,
-.review-form-section-rain-world textarea,
-.review-form-section-rain-world select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #8491A1;
-    background-color: #2C486D;
-    color: #F8F4E9;
-}
-
 /* Suggestions Section */
-.suggestions-section-rain-world {
+.suggestions-section-game-review-nataniel {
     background-color: #070506;
     padding: 20px;
     border-radius: 10px;
     margin: 30px 0;
 }
 
-.suggestions-section-rain-world h3 {
+.suggestions-section-game-review-nataniel h3 {
     color: #F8F4E9;
     margin-bottom: 20px;
 }
 
-.suggestion-cards-rain-world {
+.suggestion-cards-game-review-nataniel {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
 }
 
-.suggestion-card-rain-world {
+.suggestion-card-game-review-nataniel {
     background-color: #0B0F1A;
     color: #F8F4E9;
     padding: 15px;
@@ -1234,23 +1174,83 @@ input[type="range"]::-moz-range-thumb {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.suggestion-card-rain-world img {
+.suggestion-card-game-review-nataniel img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.suggestion-card-rain-world h4 {
+.suggestion-card-game-review-nataniel h4 {
     margin: 10px 0;
     color: #8491A1;
 }
 
-.suggestion-card-rain-world p {
+.suggestion-card-game-review-nataniel p {
     font-size: 0.9rem;
     color: #F8F4E9;
 }
 
-.suggestion-card-rain-world:hover {
+.suggestion-card-game-review-nataniel:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Reviews Section */
+.reviews-section-game-review-nataniel {
+    margin: 40px 0;
+}
+
+.review-cards-game-review-nataniel {
+    display: flex;
+    gap: 20px;
+}
+
+.review-card-game-review-nataniel {
+    background: #0B0F1A;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    flex: 1;
+}
+
+.review-card-game-review-nataniel p {
+    margin: 0;
+    font-style: italic;
+    color: #F8F4E9;
+}
+
+.review-card-game-review-nataniel span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8491A1;
+}
+
+/* Form Section */
+.review-form-section-game-review-nataniel {
+    background: #0B0F1A;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.review-form-section-game-review-nataniel h3 {
+    margin-bottom: 20px;
+    color: #F8F4E9;
+}
+
+.review-form-section-game-review-nataniel form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-form-section-game-review-nataniel input,
+.review-form-section-game-review-nataniel textarea,
+.review-form-section-game-review-nataniel select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8491A1;
+    background-color: #2C486D;
+    color: #F8F4E9;
 }

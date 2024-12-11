@@ -162,5 +162,20 @@ if (array_key_exists($selectedGame, $games)) {
         </form>
     </section>
 </main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@gamestar.com</a></p>
+            <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+            <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+            <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

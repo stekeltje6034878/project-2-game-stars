@@ -37,3 +37,12 @@
     ?>
 </head>
 
+<body>
+<header id="reviewheader">
+    <h1 class="gameName"><?= $name ?></h1>
+</header>
+<section>
+    <img id="reviewImg" src="<?= $img ?>" alt="Afbeelding van <?= $name ?>">
+</section>
+</body>
+</html>

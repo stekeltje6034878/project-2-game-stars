@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Far Cry 4/ Just Cause 3</title>
+    <link rel="stylesheet" href="../../../css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is our review website about the game: Far cry 4 and just cause 3.">
+    <meta name="keywords" content="Just Cause 3, Far Cry, Far Cry 4, Shooter game, review">
+    <meta name="author" content="Nataniel Bialek">
+</head>
+<body class="body-game-review-nataniel">
+<!-- Navigation Bar -->
+<nav class="topbar">
+    <ul class="bar">
+        <li class="icon"><a href="/"><img src="../../../assets/logo.png" alt="Logo"></a></li>
+    </ul>
+
+    <ul class="sidebar">
+        <li class="hide-button" onclick="hideSidebar()">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+            </svg></a>
+        </li>
+        <li><a href="../../../pages/index.html">HOME</a></li>
+        <li><a href="../../../pages/games.html">GAMES</a></li>
+        <li><a href="../../../pages/contact.html">CONTACT</a></li>
+        <li><a href="../../../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+        <li class="hideOnMobile"><a href="../../../pages/index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/games.html">GAMES</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/contact.html">CONTACT</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/merchandise.html">SHOP</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg></a>
+        </li>
+    </ul>
+</nav>
+<!-- Front -->
+<section class="front-page-game-review-nataniel" id="front-page-game-review-nataniel">
+    <div class="front-page-content-game-review-nataniel">
+        <h2>Rain World</h2>
+        <p>An ecosystem simulator disguised as a game. You are not the main character, and the game will not hold your hand. You'll die a million times.</p>
+        <a href="https://store.steampowered.com/app/312520/Rain_World/">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <img id="front-page-img-game-review-nataniel" src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_RainWorld_image1600w.jpg" alt="Game Banner">
+</section>
+
+<!-- Main Content -->
+<main class="main-content-game-review-nataniel">
+    <!-- Scores Section -->
+    <section class="scores-section-game-review-nataniel" aria-labelledby="scores-heading-game-review-nataniel">
+        <h2 id="scores-heading">Game Scores</h2>
+        <div class="score-card-game-review-nataniel">
+            <h3>Critic Score</h3>
+            <p id="criticScore" class="score-value-game-review-nataniel">65</p>
+        </div>
+        <div class="score-card-game-review-nataniel">
+            <h3>User Score</h3>
+            <p id="userScore" class="score-value-game-review-nataniel">94</p>
+        </div>
+    </section>
+
+    <!-- Game Details -->
+    <section class="details-game-review-nataniel" id="details-game-review-nataniel">
+        <div class="details-image-game-review-nataniel">
+            <img id="game-image-game-review-nataniel" src="https://gaming-cdn.com/images/products/13403/orig/rain-world-downpour-pc-game-steam-cover.jpg?v=1715262218" alt="Game Cover">
+        </div>
+        <div class="details-info-game-review-nataniel">
+            <h3>About the Game</h3>
+            <p>
+
+                You are a slugcat. The world around you is full of danger, and you must face it – alone. Separated from your family in a devastating flood, you will need to find food and shelter between terrifying torrential downpours which threaten to drown all life. Climb through the ruins of an ancient civilization, evade the jaws of vicious predators, and discover new lands teeming with strange creatures and buried mysteries. Find your family before something makes a meal of you!
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!-- Reviews -->
+    <section class="reviews-section-game-review-nataniel" id="reviews-section-game-review-nataniel">
+        <h3>What Players Are Saying</h3>
+        <div class="review-cards-game-review-nataniel">
+            <div class="review-card-game-review-nataniel">
+                <p>The mechanics of the game are great! died so many times yet i am still playing.</p>
+                <span>- Rain World Enjoyer</span>
+            </div>
+            <div class="review-card-game-review-nataniel">
+                <p>Amazing ecosystem and AI, We need more games like this!!</p>
+                <span>- RandomGamer999</span>
+            </div>
+            <div class="review-card-game-review-nataniel">
+                <p>A few bugs, but nothing that breaks the immersion. Solid game!</p>
+                <span>- GameReviewer1023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- a Review Form -->
+    <section class="review-form-section-game-review-nataniel">
+        <h3>Submit Your Review</h3>
+        <form id="reviewForm-game-review-nataniel">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="userReview">Your Review:</label>
+            <textarea id="userReview" name="userReview" rows="4" required></textarea>
+            <label for="userRating">Rating:</label>
+            <select id="userRating" name="userRating" required>
+                <option value="10">10 - Excellent</option>
+                <option value="9">9 - Great</option>
+                <option value="8">8 - Good</option>
+                <option value="7">7 - Decent</option>
+                <option value="6">6 - Fair</option>
+                <option value="5">5 - Okay</option>
+                <option value="4">4 - Mediocre</option>
+                <option value="3">3 - Bad</option>
+                <option value="2">2 - Horrible</option>
+                <option value="1">1 - Unplayable</option>
+            </select>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p style="margin: auto">Email: <a href="mailto:info@gamestar.com">info@gamestar.com</a></p>
+            <p style="margin: auto">Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <p style="margin: auto"><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+            <p style="margin: auto"><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+            <p style="margin: auto"><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+    // Store game data
+    const games = {
+        farCry4: {
+            title: "Far Cry 4",
+            description: "Set in the fictional Himalayan region of Kyrat, you must navigate a land torn by civil war. Experience open-world exploration, combat, and wildlife encounters.",
+            bannerImage: "https://image.api.playstation.com/vulcan/img/rnd/202010/1223/TPknlBAbAXGaQWcyi6YCKjCS.jpg",
+            coverImage: "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw6976382b/images/large/56c4947a88a7e300458b45e2-3.jpg",
+            criticScore: 82,
+            userScore: 88,
+            about: "Step into the shoes of Ajay Ghale, returning to Kyrat to scatter your mother’s ashes. However, you quickly find yourself caught in a violent struggle between a tyrant and a rebel army.",
+            reviews: [
+                { text: "The open-world gameplay is immersive, and the story is engaging.", author: "KyratFan123" },
+                { text: "Loved the wildlife interactions and the vast map.", author: "ExplorerGamer" },
+                { text: "Some repetitive side missions, but overall a great game.", author: "ObjectiveReviewer" },
+            ],
+        },
+        justCause3: {
+            title: "Just Cause 3",
+            description: "Liberate the Mediterranean island of Medici in this explosive open-world adventure.",
+            bannerImage: "https://image.api.playstation.com/vulcan/img/rnd/202011/0204/bTNCTU8wigRaRzuJFgLGCMvy.png",
+            coverImage: "https://img.redbull.com/images/c_fill,g_auto,w_1200,h_630/f_auto,q_auto/redbullcom/2014/11/24/1331691756666_2/7-features-the-new-just-cause-3-video-game-needs-to-have",
+            criticScore: 74,
+            userScore: 80,
+            about: "Take control of Rico Rodriguez as you use your grappling hook, wingsuit, and arsenal of weapons to take down a ruthless dictator. The game offers chaos, destruction, and freedom.",
+            reviews: [
+                { text: "The wingsuit and grappling hook mechanics are amazing!", author: "ActionHero" },
+                { text: "Explosions everywhere! A great sandbox for destruction lovers.", author: "BoomLover89" },
+                { text: "A bit repetitive, but the fun factor makes up for it.", author: "CasualReviewer" },
+            ],
+        }
+    };
+
+    // Function to update the page dynamically
+    function updateGamePage(gameKey) {
+        const game = games[gameKey];
+
+        if (game) {
+            // Update general game content
+            document.querySelector(".front-page-game-review-nataniel h2").textContent = game.title;
+            document.querySelector(".front-page-game-review-nataniel p").textContent = game.description;
+            document.querySelector("#front-page-img-game-review-nataniel").src = game.bannerImage;
+
+            document.querySelector("#game-image-game-review-nataniel").src = game.coverImage;
+            document.querySelector("#criticScore").textContent = game.criticScore;
+            document.querySelector("#userScore").textContent = game.userScore;
+            document.querySelector(".details-info-game-review-nataniel p").textContent = game.about;
+
+            // Update reviews section
+            const reviewsContainer = document.querySelector(".review-cards-game-review-nataniel");
+            reviewsContainer.innerHTML = ""; // Clear existing reviews
+            game.reviews.forEach(review => {
+                const reviewCard = document.createElement("div");
+                reviewCard.classList.add("review-card-game-review-nataniel");
+                reviewCard.innerHTML = `
+                <p>"${review.text}"</p>
+                <span>- ${review.author}</span>
+            `;
+                reviewsContainer.appendChild(reviewCard);
+            });
+
+            // Log the currently displayed game
+            console.log(`Currently displayed game: ${game.title}`);
+        } else {
+            console.error("Invalid game key provided");
+        }
+    }
+
+    // Dynamically set the current game
+    const selectedGame = "farCry4"; // Change this variable to "farCry4" or "justCause3". Refresh the page after changing the variable.
+    updateGamePage(selectedGame);
+
+</script>
+</body>
+</html>

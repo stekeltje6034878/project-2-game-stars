@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Thijs Stekelenburg">
+  <title>Game Review2 - JavaScript</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const games = [
+        {
+          title: 'The forest',
+          pegi: 18,
+          description: 'A thrilling action-adventure game.',
+          photos: ['../../../assets/the_forest1.jpg', '../../../assets/the_forest2.jpg']
+        },
+        {
+          title: 'GTA 5',
+          pegi: 18,
+          description: 'An epic RPG with a rich storyline.',
+          photos: ['../../../assets/gta1.jpg', '../../../assets/gta2.jpg']
+        }
+      ];
+
+      const queryParams = new URLSearchParams(window.location.search);
+      let selectedGame = queryParams.get('selectedGameId');
+
+      if (selectedGame === 'id0') {
+        displayGame(games[0]);
+        console.log(`Currently displayed: ${games[0].title}`);
+      } else {
+        displayGame(games[1]);
+        console.log(`Currently displayed: ${games[1].title}`);
+      }
+
+      function displayGame(game) {
+        document.getElementById('title').innerText = game.title;
+        document.getElementById('pegi').innerText = `PEGI Rating: ${game.pegi}`;
+        document.getElementById('description').innerText = game.description;
+        document.getElementById('photo1').src = game.photos[0];
+        document.getElementById('photo2').src = game.photos[1];
+      }
+    });
+  </script>
+</head>
+<body>
+<h1 id="title"></h1>
+<p id="pegi"></p>
+<p id="description"></p>
+<div>
+  <img id="photo1" src="" alt="Game Photo 1">
+  <img id="photo2" src="" alt="Game Photo 2">
+</div>
+</body>
+</html>
+
+
+

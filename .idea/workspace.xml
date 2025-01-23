@@ -5,22 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="volledig klaar, nu is het ook daatwerkelijk klaar">
+      <change afterPath="$PROJECT_DIR$/assets/Elden1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Elden2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/elden3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/god1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/god2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/god3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/god4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/god5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/gta1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/gta2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/minecraft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/the_forest1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/the_forest2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/witcher1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/witcher2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/witcher3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review2/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review3/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review4/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review_latest Reviews/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -60,37 +90,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Home.html.executor": "Run",
-    "JavaScript Debug.contact.html.executor": "Run",
-    "JavaScript Debug.footer.html.executor": "Run",
-    "JavaScript Debug.game-review-rainworld.html.executor": "Run",
-    "JavaScript Debug.game_review.html.executor": "Run",
-    "JavaScript Debug.game_view.html.executor": "Run",
-    "JavaScript Debug.game_view.php.executor": "Run",
-    "JavaScript Debug.games.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.merchandise.html.executor": "Run",
-    "JavaScript Debug.merchendise.html.executor": "Run",
-    "JavaScript Debug.navbar.html.executor": "Run",
-    "Node.js.navbar.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/thijs/Downloads/JVS - Week 4 - Opdrachten sets/JVS - Week 4 - Opdrachten sets/Opdrachten set 6 - innerHTML set 2",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.Home.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.contact.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.game-review-rainworld.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.game_review.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.game_view.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.game_view.php.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.games.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (3).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.php (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.merchandise.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.merchendise.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.navbar.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.navbar.js.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thijs/Downloads/JVS - Week 4 - Opdrachten sets/JVS - Week 4 - Opdrachten sets/Opdrachten set 6 - innerHTML set 2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\componenten" />
@@ -102,6 +139,32 @@
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\pages\assets" />
       <recent name="C:\Users\thijs\PycharmProjects\project 2 game stars\js" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.php (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project 2 game stars/opdrachten/opdrachten_thijs/game_review_latest Reviews/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project 2 game stars/opdrachten/opdrachten_thijs/game_review3/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project 2 game stars/opdrachten/opdrachten_thijs/game_review_latest Reviews/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/project 2 game stars/opdrachten/opdrachten_thijs/game_review4/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review_latest Reviews/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php (1)" />
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -129,6 +192,27 @@
       <workItem from="1733301637488" duration="4104000" />
       <workItem from="1733313796549" duration="2456000" />
       <workItem from="1733740734882" duration="2752000" />
+      <workItem from="1733750271765" duration="706000" />
+      <workItem from="1733907498956" duration="2136000" />
+      <workItem from="1734182850761" duration="1435000" />
+      <workItem from="1734353215344" duration="66000" />
+      <workItem from="1734353313399" duration="3244000" />
+      <workItem from="1734363257024" duration="1429000" />
+      <workItem from="1734438164178" duration="1976000" />
+      <workItem from="1734440900212" duration="119000" />
+      <workItem from="1734511483328" duration="2336000" />
+      <workItem from="1734526045201" duration="1403000" />
+      <workItem from="1735388017581" duration="930000" />
+      <workItem from="1735656485364" duration="2179000" />
+      <workItem from="1735912509752" duration="6407000" />
+      <workItem from="1736166661837" duration="1419000" />
+      <workItem from="1736338331578" duration="13000" />
+      <workItem from="1736338607200" duration="405000" />
+      <workItem from="1736502225648" duration="1667000" />
+      <workItem from="1736556021218" duration="7000" />
+      <workItem from="1736854570615" duration="45000" />
+      <workItem from="1737373891433" duration="649000" />
+      <workItem from="1737650248258" duration="5038000" />
     </task>
     <task id="LOCAL-00001" summary="first pull">
       <option name="closed" value="true" />
@@ -261,5 +345,9 @@
     <MESSAGE value="nog een push" />
     <MESSAGE value="volledig klaar, nu is het ook daatwerkelijk klaar" />
     <option name="LAST_COMMIT_MESSAGE" value="volledig klaar, nu is het ook daatwerkelijk klaar" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

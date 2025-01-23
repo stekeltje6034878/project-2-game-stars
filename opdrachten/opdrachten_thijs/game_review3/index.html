@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+</head>
+<body>
+<script>
+    const games = [
+        {
+            id: 1,
+            title: 'Elden Ring',
+            genre: ['RPG', 'Adventure'],
+            photos: ['../../../assets/elden1.jpg', '../../../assets/elden2.jpg', '../../../assets/elden3.jpg'],
+            pegi: 18,
+            description: 'A vast open-world RPG with challenging combat and deep lore.',
+            rating: 4.8,
+            trailer: "https://www.youtube.com/embed/E3Huy2cdih0?si=l7HJPpA1NnayIpTO" ,
+            platform: ['PC', 'PS5', 'Xbox Series X'],
+            developer: 'FromSoftware'
+        },
+        {
+            id: 2,
+            title: 'The Witcher 3: Wild Hunt',
+            genre: ['RPG', 'Fantasy'],
+            photos: ['../../../assets/witcher1.jpg', '../../../assets/witcher2.jpg', '../../../assets/witcher3.jpg'],
+            pegi: 12,
+            description: 'A magical role-playing experience.',
+            rating: 4.8,
+            trailer:"https://www.youtube.com/embed/xx8kQ4s5hCY?si=ireTK2DGDTZbmPmD" ,
+            platform: ['Xbox', 'Switch'],
+            developer: 'Studio Two'
+        }
+    ];
+
+    const queryParams = new URLSearchParams(window.location.search);
+    let currentGameId = parseInt(queryParams.get('selectedGameId'));
+    let age = parseInt(prompt('Enter your age:'));
+    const selectedGame = games.find(game => game.id === currentGameId);
+
+    if (age >= selectedGame.pegi) {
+        document.body.innerHTML += `<h1>${selectedGame.title}</h1>`;
+        document.body.innerHTML += `<p>Genre: ${selectedGame.genre.join(', ')}</p>`;
+        document.body.innerHTML += `<p>Description: ${selectedGame.description}</p>`;
+        document.body.innerHTML += `<p>PEGI: ${selectedGame.pegi}</p>`;
+        document.body.innerHTML += `<p>Rating: ${selectedGame.rating}</p>`;
+        document.body.innerHTML += `<p>Platforms: ${selectedGame.platform.join(', ')}</p>`;
+        document.body.innerHTML += `<p>Developer: ${selectedGame.developer}</p>`;
+        document.body.innerHTML += `<iframe width="560" height="315" src="${selectedGame.trailer}"
+                title="YouTube video player" frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>`;
+        const photoDiv = document.createElement('div');
+        selectedGame.photos.forEach(photo => {
+            photoDiv.innerHTML += `<img src="${photo}" alt="Game Image" />`;
+        });
+        document.body.appendChild(photoDiv);
+    } else {
+        document.body.innerHTML += `<p>You are not old enough to view this game.</p>`;
+    }
+</script>
+</body>
+</html>

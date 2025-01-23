@@ -18,7 +18,8 @@
     }
 
     .gameName {
-      margin-left: 20px;
+        margin-left: 20px;
+        color: #28a745;
     }
     #reviewImg {
       margin: auto;
@@ -39,30 +40,23 @@
 </body>
 
 <script defer>
-    // Selecteer de elementen uit de HTML
-    const title = document.querySelector(".gameName");
+
+    let title = document.querySelector(".gameName");
     const image = document.getElementById("reviewImg");
 
-    // Definieer de game data
     const games = {
         id1: {
-            name: 'God Of War Ragnarok',
-            img: '../assets/god-of-war-ragnarok.avif'
+            name: 'Minecraft',
+            img: '../../../assets/minecraft.jpg'
         },
         id2: {
             name: 'Stardew Valley',
-            img: "../assets/Stardew-Valley.png"
+            img: "../../../assets/Stardew-Valley.png"
         },
-        id3: {
-            name: 'The Legend of Zelda: Breath of the Wild',
-            img: "../assets/zelda-breath-of-the-wild.jpg"
-        }
     };
+    const queryParams = new URLSearchParams(window.location.search);
+    let selectedGameId = queryParams.get('selectedGameId');
 
-    // Variabele om de geselecteerde game te bepalen
-    let selectedGameId = 'id2'; // Pas dit aan om een andere game te tonen
-
-    // Gebruik een switch-statement om de juiste game weer te geven
     switch (selectedGameId) {
         case 'id1':
             title.innerHTML = `${games.id1.name}`;
@@ -74,12 +68,6 @@
             title.innerHTML = `${games.id2.name}`;
             image.src = `${games.id2.img}`;
             console.log(`De game op de pagina is: ${games.id2.name}`);
-            break;
-
-        case 'id3':
-            title.innerHTML = `${games.id3.name}`;
-            image.src = `${games.id3.img}`;
-            console.log(`De game op de pagina is: ${games.id3.name}`);
             break;
 
         default:

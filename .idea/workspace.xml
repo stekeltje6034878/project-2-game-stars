@@ -4,39 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="volledig klaar, nu is het ook daatwerkelijk klaar">
-      <change afterPath="$PROJECT_DIR$/assets/Elden1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Elden2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elden3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/god1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/god2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/god3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/god4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/god5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gta1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gta2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/minecraft.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/the_forest1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/the_forest2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/witcher1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/witcher2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/witcher3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review2/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review3/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review4/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review_latest Reviews/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="668e13c6-4d40-43a3-9dc4-e13f6ba94b13" name="Changes" comment="klaar!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/game_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdrachten/opdrachten_thijs/game_review1/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/merchandise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +181,7 @@
       <workItem from="1736556021218" duration="7000" />
       <workItem from="1736854570615" duration="45000" />
       <workItem from="1737373891433" duration="649000" />
-      <workItem from="1737650248258" duration="5038000" />
+      <workItem from="1737650248258" duration="5360000" />
     </task>
     <task id="LOCAL-00001" summary="first pull">
       <option name="closed" value="true" />
@@ -318,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733306858247</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="klaar!">
+      <option name="closed" value="true" />
+      <created>1737673213753</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737673213753</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +321,8 @@
     <MESSAGE value="volledig klaar, hier ga ik niks meer aan veranderen" />
     <MESSAGE value="nog een push" />
     <MESSAGE value="volledig klaar, nu is het ook daatwerkelijk klaar" />
-    <option name="LAST_COMMIT_MESSAGE" value="volledig klaar, nu is het ook daatwerkelijk klaar" />
+    <MESSAGE value="klaar!" />
+    <option name="LAST_COMMIT_MESSAGE" value="klaar!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

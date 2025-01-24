@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft/Lego Worlds</title>
+    <link rel="stylesheet" href="../../../css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is our review website about the game: Far cry 4 and just cause 3.">
+    <meta name="keywords" content="Just Cause 3, Far Cry, Far Cry 4, Shooter game, review">
+    <meta name="author" content="Nataniel Bialek">
+</head>
+<body class="body-game-review-nataniel">
+
+<!-- Navigation Bar -->
+<nav class="topbar">
+    <ul class="bar">
+        <li class="icon">
+            <a href="/"><img src="../../../assets/logo.png" alt="Logo"></a>
+        </li>
+    </ul>
+
+    <ul class="sidebar">
+        <li class="hide-button" onclick="hideSidebar()">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+                    <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+                </svg>
+            </a>
+        </li>
+        <li><a href="../../../pages/index.html">HOME</a></li>
+        <li><a href="../../../pages/games.html">GAMES</a></li>
+        <li><a href="../../../pages/contact.html">CONTACT</a></li>
+        <li><a href="../../../pages/merchandise.html">SHOP</a></li>
+    </ul>
+
+    <ul class="bar">
+        <li class="hideOnMobile"><a href="../../../pages/index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/games.html">GAMES</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/contact.html">CONTACT</a></li>
+        <li class="hideOnMobile"><a href="../../../pages/merchandise.html">SHOP</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Front -->
+<section class="front-page-game-review-nataniel" id="front-page-game-review-nataniel">
+    <div class="front-page-content-game-review-nataniel">
+        <h2></h2>
+        <p></p>
+
+    </div>
+    <img id="front-page-img-game-review-nataniel" src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_RainWorld_image1600w.jpg" alt="Game Banner">
+</section>
+
+<!-- Main Content -->
+<main class="main-content-game-review-nataniel">
+
+    <!-- Scores Section -->
+    <section class="scores-section-game-review-nataniel" aria-labelledby="scores-heading-game-review-nataniel">
+        <h2 id="scores-heading">Game Scores</h2>
+        <div class="score-card-game-review-nataniel">
+            <h3>Critic Score</h3>
+            <p id="criticScore" class="score-value-game-review-nataniel"></p>
+        </div>
+        <div class="score-card-game-review-nataniel">
+            <h3>User Score</h3>
+            <p id="userScore" class="score-value-game-review-nataniel"></p>
+        </div>
+    </section>
+
+    <!-- Game Details -->
+    <section class="details-game-review-nataniel" id="details-game-review-nataniel">
+        <div class="details-image-game-review-nataniel">
+            <img id="game-image-game-review-nataniel" src="" alt="Game Cover">
+        </div>
+        <div class="details-info-game-review-nataniel">
+            <h3>About the Game</h3>
+            <p id="game-description-game-review-nataniel"></p>
+            <p><strong>Author:</strong> <span id="game-author-game-review-nataniel"></span></p>
+            <p><strong>PEGI Rating:</strong> <span id="game-pegi-game-review-nataniel"></span></p>
+            <p><strong>Genre:</strong> <span id="game-genre-game-review-nataniel"></span></p>
+            <p><strong>Platform</strong> <span id="game-platform-game-review-nataniel"></span></p>
+            <div class="youtube-link-game-review-nataniel">
+            </div>
+        </div>
+    </section>
+
+    <section class="game-screenshot-game-review-nataniel">
+        <h3>Game Snapshot</h3>
+        <img id="game-screenshot-game-review-nataniel" src="" alt="Additional Game Snapshot">
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews-section-game-review-nataniel" id="reviews-section-game-review-nataniel">
+        <h3></h3>
+        <div class="review-cards-game-review-nataniel">
+            <div class="review-card-game-review-nataniel">
+                <p></p>
+                <span></span>
+            </div>
+            <div class="review-card-game-review-nataniel">
+                <p></p>
+                <span></span>
+            </div>
+            <div class="review-card-game-review-nataniel">
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Form -->
+    <section class="review-form-section-game-review-nataniel">
+        <h3>Submit Your Review</h3>
+        <form id="reviewForm-game-review-nataniel">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="userReview">Your Review:</label>
+            <textarea id="userReview" name="userReview" rows="4" required></textarea>
+
+            <label for="userRating">Rating:</label>
+            <select id="userRating" name="userRating" required>
+                <option value="10">10 - Excellent</option>
+                <option value="9">9 - Great</option>
+                <option value="8">8 - Good</option>
+                <option value="7">7 - Decent</option>
+                <option value="6">6 - Fair</option>
+                <option value="5">5 - Okay</option>
+                <option value="4">4 - Mediocre</option>
+                <option value="3">3 - Bad</option>
+                <option value="2">2 - Horrible</option>
+                <option value="1">1 - Unplayable</option>
+            </select>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:info@gamestar.com">info@gamestar.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+928 479 98272</a></p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <p><a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a></p>
+            <p><a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a></p>
+            <p><a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+    // game data
+    const games = [
+        {
+            title: "Portal 2",
+            pegi: 12,
+            author: "Valve",
+            description: "A mind-bending puzzle adventure where you use physics-defying portals to solve challenges.",
+            bannerImage: "https://assetsio.gnwcdn.com/991101_20110228_screen001.jpg.jpg?width=690&quality=75&format=jpg&auto=webp",
+            coverImage: "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2cover.jpg",
+            gameScreenshot: "https://media.wired.com/photos/5932a9c29be5e55af6c26664/master/pass/old_testchamber.jpg",
+            criticScore: 95,
+            userScore: 92,
+            about: "Return to Aperture Science and master the art of portal manipulation.",
+            genre: "Puzzle/Adventure",
+            platforms: "PC, XBOX, PS3 ",
+            youtubeLink: "https://www.youtube.com/embed/ts-j0nFf2e0?si=SgimU6jT8Yt552ZI ",
+            reviews: [
+                { text: "The puzzles are brilliantly designed and the humor is spot-on!", author: "PortalMaster" },
+                { text: "Co-op mode adds a whole new dimension to the puzzle-solving.", author: "TeamPlayer2" },
+                { text: "One of the most innovative and entertaining games ever made.", author: "PuzzleEnthusiast" },
+            ],
+        },
+        {
+            title: "Minecraft",
+            pegi: 12,
+            author: "Mojang Studios",
+            description: "Build, explore, and create in this infinite blocky world.",
+            bannerImage: "https://store-images.s-microsoft.com/image/apps.60323.13950084616086229.56d90257-df96-4000-bf85-a64704b3b019.d4ae0460-e24a-41ce-9e09-a92dc478362f?mode=scale&q=90&h=720&w=1280&format=jpg",
+            coverImage: "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg",
+            gameScreenshot: "https://i.pinimg.com/originals/5c/92/a2/5c92a26b03db78fd8a05eafcd275e5a3.jpg",
+            criticScore: 93,
+            userScore: 90,
+            about: "Experience unlimited possibilities in a procedurally generated world.",
+            genre: "Sandbox/Adventure",
+            platforms: "PC, XBOX, PS3/4, Nitendo Switch ",
+            youtubeLink: "https://www.youtube.com/embed/MmB9b5njVbA?si=og7iMxs5jz-virLW",
+            reviews: [
+                { text: "The perfect blend of creativity, survival, and adventure.", author: "BlockBuilder" },
+                { text: "Endless possibilities for creation and exploration.", author: "MineCrafter99" },
+                { text: "Great for both relaxing building and exciting adventures.", author: "CraftingPro" },
+            ],
+        },
+    ];
+
+    // Function to check age restriction
+    function checkAgeRestriction(userAge, gameIndex) {
+        return userAge >= games[gameIndex].pegi;
+    }
+
+    // Function to update game page
+    function updateGamePage(gameIndex, userAge) {
+        const game = games[gameIndex];
+        if (!checkAgeRestriction(userAge, gameIndex)) {
+            document.querySelector("body").innerHTML = `
+                    <div class="age-restriction-overlay">
+                        <p>Sorry, you must be ${game.pegi} or older to view this game.</p>
+                    </div>
+                `;
+            return;
+        }
+
+        document.querySelector(".front-page-game-review-nataniel h2").textContent = game.title;
+        document.querySelector(".front-page-game-review-nataniel p").textContent = game.description;
+        document.querySelector("#front-page-img-game-review-nataniel").src = game.bannerImage;
+        document.querySelector("#game-image-game-review-nataniel").src = game.coverImage;
+        document.querySelector("#game-screenshot-game-review-nataniel").src = game.gameScreenshot;
+        document.querySelector("#game-description-game-review-nataniel").textContent = game.about;
+        document.querySelector("#game-author-game-review-nataniel").textContent = game.author;
+        document.querySelector("#game-pegi-game-review-nataniel").textContent = game.pegi;
+        document.querySelector("#game-genre-game-review-nataniel").textContent = game.genre;
+        document.querySelector("#game-platform-game-review-nataniel").textContent = game.platforms
+        document.querySelector(".youtube-link-game-review-nataniel").textContent = game.youtubeLink;
+        document.querySelector("#criticScore").textContent = game.criticScore;
+        document.querySelector("#userScore").textContent = game.userScore;
+
+        const reviewsContainer = document.querySelector(".review-cards-game-review-nataniel");
+        reviewsContainer.innerHTML = "";
+
+        for (let i = 0; i < game.reviews.length; i++) {
+            const review = game.reviews[i];
+            const reviewCard = document.createElement("div");
+            reviewCard.classList.add("review-card-game-review-nataniel");
+            reviewCard.innerHTML = `
+                    <p>"${review.text}"</p>
+                    <span>- ${review.author}</span>
+                `;
+            reviewsContainer.appendChild(reviewCard);
+        }
+
+        console.log(`Currently displayed game: ${game.title}`);
+    }
+
+    // Get user age
+    function getUserAge() {
+        const age = prompt("Please enter your age:");
+        return parseInt(age) || 0;
+    }
+
+    // Select game
+    function selectGame(gameTitle) {
+        switch (gameTitle.toLowerCase()) {
+            case "portal 2":
+                return 0;
+            case "minecraft":
+                return 1;
+            default:
+                console.error("Game not found");
+                return 0;
+        }
+    }
+
+    // Initialize page
+    const userAge = getUserAge();
+    const selectedGame = selectGame("portal 2"); // Change the variable to "portal 2" or "minecraft" to switch games
+    updateGamePage(selectedGame, userAge);
+</script>
+
+</body>
+</html>

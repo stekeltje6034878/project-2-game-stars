@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Minecraft/Lego Worlds</title>
+    <title>portal 1/2</title>
     <link rel="stylesheet" href="../../../css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="This is our review website about the game: Far cry 4 and just cause 3.">
-    <meta name="keywords" content="Just Cause 3, Far Cry, Far Cry 4, Shooter game, review">
+    <meta name="description" content="This is our review website about the game: portal 1 and 2.">
+    <meta name="keywords" content="portal 1,portal 2, puzzle game review">
     <meta name="author" content="Nataniel Bialek">
 </head>
 <body class="body-game-review-nataniel">
@@ -94,7 +94,7 @@
 
     <section class="game-screenshot-game-review-nataniel">
         <h3>Game Snapshot</h3>
-        <img id="game-screenshot-game-review-nataniel" src="" alt="Additional Game Snapshot">
+        <img id="game-screenshot-game-review-nataniel" src="" alt="game screenshot">
     </section>
 
     <!-- Reviews -->
@@ -187,23 +187,23 @@
             ],
         },
         {
-            title: "Minecraft",
+            title: "Portal",
             pegi: 12,
-            author: "Mojang Studios",
-            description: "Build, explore, and create in this infinite blocky world.",
-            bannerImage: "https://store-images.s-microsoft.com/image/apps.60323.13950084616086229.56d90257-df96-4000-bf85-a64704b3b019.d4ae0460-e24a-41ce-9e09-a92dc478362f?mode=scale&q=90&h=720&w=1280&format=jpg",
-            coverImage: "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg",
-            gameScreenshot: "https://i.pinimg.com/originals/5c/92/a2/5c92a26b03db78fd8a05eafcd275e5a3.jpg",
-            criticScore: 93,
-            userScore: 90,
-            about: "Experience unlimited possibilities in a procedurally generated world.",
-            genre: "Sandbox/Adventure",
-            platforms: "PC, XBOX, PS3/4, Nitendo Switch ",
-            youtubeLink: "https://www.youtube.com/embed/MmB9b5njVbA?si=og7iMxs5jz-virLW",
+            author: "Valve",
+            description: "Step into Aperture Science as you solve physics puzzles with a revolutionary portal gun.",
+            bannerImage: "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000050319/122954ab00a225034fa09c8e5ba29b2f9fc0b371a8d550c34ebeecc2727522c3",
+            coverImage: "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg",
+            gameScreenshot: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Portalgame.jpg/220px-Portalgame.jpg",
+            criticScore: 90,
+            userScore: 89,
+            about: "Portal is a groundbreaking puzzle game that challenges you to think with portals. Navigate through a series of increasingly complex test chambers.",
+            genre: "Puzzle/Platformer",
+            platforms: "PC, XBOX, PS3",
+            youtubeLink: "https://www.youtube.com/embed/TluRVBhmf8w",
             reviews: [
-                { text: "The perfect blend of creativity, survival, and adventure.", author: "BlockBuilder" },
-                { text: "Endless possibilities for creation and exploration.", author: "MineCrafter99" },
-                { text: "Great for both relaxing building and exciting adventures.", author: "CraftingPro" },
+                { text: "A short but unforgettable experience that defined a genre.", author: "PuzzleGamer" },
+                { text: "Clever, engaging, and thoroughly innovative gameplay.", author: "ValveFan" },
+                { text: "Still one of the best puzzle games ever made.", author: "GLaDOSLover" },
             ],
         },
     ];
@@ -267,7 +267,7 @@
         switch (gameTitle.toLowerCase()) {
             case "portal 2":
                 return 0;
-            case "minecraft":
+            case "portal 1":
                 return 1;
             default:
                 console.error("Game not found");
@@ -277,7 +277,7 @@
 
     // Initialize page
     const userAge = getUserAge();
-    const selectedGame = selectGame("portal 2"); // Change the variable to "portal 2" or "minecraft" to switch games
+    const selectedGame = selectGame("portal 2"); // Change the variable to "portal 2" or "portal 1" to switch games
     updateGamePage(selectedGame, userAge);
 </script>
 

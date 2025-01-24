@@ -1,61 +1,69 @@
 <?php
 // Define game data
 $games = [
-    "assassinsCreedValhalla" => [
-        "title" => "Assassin's Creed Valhalla",
-        "pegi" => "Pegi rating: 16",
-        "gameAuthor" => "Ubisoft",
-        "description" => "An action RPG where you play as Eivor, a Viking warrior exploring a vast open world of England during the Viking Age.",
-        "bannerImage" => "https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/game-info/valhalla-keyart-banner.jpg",
-        "coverImage" => "https://image.api.playstation.com/vulcan/img/rnd/202011/0918/PrJ1R2fbJLo5eh4P8t9UjKXi.jpg",
-        "criticScore" => 85,
-        "userScore" => 90,
-        "about" => "Forge alliances, lead raids, and build your settlement in this immersive Viking RPG. Dive into epic battles and unravel the story of Norse mythology.",
+    "horizonZeroDawn" => [
+        "title" => "Horizon Zero Dawn",
+        "pegi" => 16,
+        "gameAuthor" => "Guerrilla Games",
+        "description" => "An action-adventure game set in a post-apocalyptic world overrun by robotic creatures. Play as Aloy, a hunter, as she uncovers the mysteries of her world.",
+        "bannerImage" => "https://thethinair.net/wp-content/uploads/2017/04/3079328-horizonzerodawn_e32016_thunderjaw_tallneck_1465873632.jpg",
+        "coverImage" => "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/capsule_616x353.jpg?t=1673556104",
+        "gameScreenshot" => "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/10/mixcollage-03-oct-2024-03-19-pm-2057.jpg",
+        "criticScore" => 89,
+        "userScore" => 91,
+        "about" => "Explore a breathtaking open world, engage in thrilling combat, and uncover a gripping story. Horizon Zero Dawn is a must-play for fans of action RPGs.",
         "genre" => "Action, RPG",
-        "platforms" => "PC, PS4, PS5, Xbox One, Xbox Series X/S",
-        "youtubeLink" => "https://www.youtube.com/watch?v=ssrNcwxALS4",
+        "platforms" => "PC, PS4, PS5",
+        "youtubeLink" => "https://www.youtube.com/embed/wzx96gYA8ek?si=NI1mwlkyB-UjpAZR",
         "reviews" => [
-            ["text" => "A stunning and engaging Viking saga with a vast world to explore!", "author" => "NordicGamer"],
-            ["text" => "Ubisoft delivers an epic experience blending history and mythology.", "author" => "GameCriticPro"],
-            ["text" => "The combat, exploration, and storytelling are top-notch.", "author" => "RPGFanatic"],
+            ["text" => "An outstanding blend of exploration, combat, and storytelling.", "author" => "OpenWorldExpert"],
+            ["text" => "Stunning visuals and a deeply immersive world.", "author" => "GamerGirl2021"],
+            ["text" => "Aloy is one of the best protagonists in gaming.", "author" => "StoryLover"],
         ],
     ],
-    "theWitcher3" => [
-        "title" => "The Witcher 3: Wild Hunt",
-        "pegi" => "Pegi rating: 16",
-        "gameAuthor" => "CD Projekt Red",
-        "description" => "A story-driven open-world RPG where you play as Geralt of Rivia, a monster hunter on a quest to find his adopted daughter.",
-        "bannerImage" => "https://image.api.playstation.com/vulcan/img/rnd/202010/1310/Zg2X4C3Xr9h3FwD9cGFf3sPG.png",
-        "coverImage" => "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg?t=1638451363",
-        "criticScore" => 92,
-        "userScore" => 95,
-        "about" => "Experience a rich and immersive fantasy world filled with deep characters, dangerous monsters, and complex decisions that shape your journey.",
+    "assassinsCreedOdyssey" => [
+        "title" => "Assassin's Creed Odyssey",
+        "pegi" => 16,
+        "gameAuthor" => "Ubisoft",
+        "description" => "Embark on an epic journey through Ancient Greece. Play as Alexios or Kassandra, a Spartan mercenary, and make choices that shape your story.",
+        "bannerImage" => "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ahHnOGe0X5rvgay2ecnlC/7e3c1e18ec9e0c240c6140e5de49d119/acod-hero-video-thumbnail-v1.jpg",
+        "coverImage" => "https://www.rgj.com/gcdn/presto/2018/10/11/PREN/6de5939d-7015-41c0-8e25-66dae72eeb6f-AC_Odyssey_Screenshot_05.jpg?crop=1920,1080,x17,y0&width=1600&height=800&format=pjpg&auto=webp",
+        "gameScreenshot" => "https://imageio.forbes.com/blogs-images/games/files/2018/09/ac-odyssey1.png?format=png&height=600&width=1200&fit=bounds",
+        "criticScore" => 87,
+        "userScore" => 88,
+        "about" => "Dive into an open-world RPG where your choices matter. Fight epic battles, explore iconic landmarks, and uncover the mysteries of Greek mythology.",
         "genre" => "Action, RPG",
-        "platforms" => "PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch",
-        "youtubeLink" => "https://www.youtube.com/watch?v=HtVdAasjOgU",
+        "platforms" => "PC, PS4, Xbox One",
+        "youtubeLink" => "https://www.youtube.com/watch?v=s_SJZSAtLBA",
         "reviews" => [
-            ["text" => "An RPG masterpiece with an unforgettable story.", "author" => "FantasyFanatic"],
-            ["text" => "Every decision you make has weight and consequence.", "author" => "RPGAdventurer"],
-            ["text" => "Incredible world-building and character depth.", "author" => "OpenWorldLover"],
+            ["text" => "An ambitious and visually stunning game set in Ancient Greece.", "author" => "HistoryBuff"],
+            ["text" => "A rich world filled with quests and engaging combat.", "author" => "OpenWorldFan"],
+            ["text" => "A masterpiece of storytelling and exploration.", "author" => "GameCritic"],
         ],
     ],
 ];
 
 // Dynamically select a game
-$selectedGame = "assassinsCreedValhalla"; // Change to "theWitcher3" for The Witcher 3
+$selectedGame = "horizonZeroDawn"; // Change to "assassinsCreedOdyssey" or "horizonZeroDawn" for the games
 
-// Use a switch statement to select the game
+$userAge = 16; // Replace with actual input
+
+// Switch statement to change game
 switch ($selectedGame) {
-    case "assassinsCreedValhalla":
-        $game = $games["assassinsCreedValhalla"];
-        break;
-    case "theWitcher3":
-        $game = $games["theWitcher3"];
+    case "horizonZeroDawn":
+    case "assassinsCreedOdyssey":
+        $game = $games[$selectedGame];
         break;
     default:
         die("Invalid game selection. Please check the selected game key.");
 }
+
+// Check age restriction
+if ($userAge < $game["pegi"]) {
+    die("You are not old enough to view details for this game. Minimum age is " . $game["pegi"] . ".");
+}
 ?>
+
 
 
 <!DOCTYPE html>
@@ -67,7 +75,7 @@ switch ($selectedGame) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Game review page for <?= $game['title'] ?>.">
-    <meta name="keywords" content="Planet Coaster, Zoo Tycoon, simulation games, family-friendly, game review">
+    <meta name="keywords" content="Horizon Zero Dawn, Shadow Of The TombRaider, game review">
     <meta name="author" content="Nataniel Bialek">
 </head>
 <body class="body-game-review-nataniel">
@@ -134,14 +142,17 @@ switch ($selectedGame) {
         <div class="details-info-game-review-nataniel">
             <h3>About the Game</h3>
             <p><?= $game["about"] ?></p>
-            <p><strong></strong> <span id="game-author-game-review-nataniel"><?= $game["gameAuthor"] ?></span></p>
-            <p><strong></strong> <span id="game-pegi-game-review-nataniel"><?= $game["pegi"] ?></span></p>
+            <p><strong>Author:</strong> <span id="game-author-game-review-nataniel"><?= $game["gameAuthor"] ?></span></p>
+            <p><strong>Pegi Rating: </strong><span id="game-pegi-game-review-nataniel"><?= $game["pegi"] ?></span></p>
             <p><strong>Genre:</strong> <span id="game-genre-game-review-nataniel"><?= $game["genre"] ?> </span></p>
             <div class="youtube-link-game-review-nataniel">
-                <p><strong><?= $game["youtubeLink"] ?></strong></p>
+                <p><strong>Trailer link: <?= $game["youtubeLink"] ?></strong></p>
             </div>
     </section>
-
+    <section class="game-screenshot-game-review-nataniel">
+        <h3>Game Snapshot</h3>
+        <img id="game-screenshot-game-review-nataniel" src="<?= $game["gameScreenshot"] ?>" alt="Additional Game Snapshot">
+    </section>
     <!-- Reviews Section -->
     <section class="reviews-section-game-review-nataniel">
         <h3>What Players Are Saying</h3>
